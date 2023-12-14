@@ -1,1 +1,20 @@
 Volovik Oleg
+
+
+#include <iostream>
+#include <stdio.h>
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	double r1, r2, parallelno, posledovatelno;
+	printf("Введите r1: ");
+	scanf("%lf", &r1);
+	printf("Введите r2: ");
+	scanf("%lf", &r2);
+	parallelno = (r1 * r2) / (r1 + r2);
+	printf("Паралельно: %lf\n", parallelno);
+	posledovatelno = r1 + r2;
+	printf("Последовательно: %lf\n", posledovatelno);
+	return 0;
+}
